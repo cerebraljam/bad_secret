@@ -29,6 +29,7 @@ def main(salt):
     conn = sqlite3.connect('rainbow.db')
     c = conn.cursor()
     c.execute("CREATE TABLE IF NOT EXISTS rainbow (number INTEGER UNIQUE, hash TEXT, PRIMARY KEY (number))")
+    c.execute("CREATE INDEX hash_index ON rainbow (hash);")
 
     while first + count < last:
         h = hashlib.new('sha1')

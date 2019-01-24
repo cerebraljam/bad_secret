@@ -7,7 +7,11 @@ Instruction:
 * Step 2: Then run the code.
 * Step 3: Query the rainbow.db for a desired credit card
 
-> sqlite3 rainbow.db "SELECT number FROM rainbow WHERE hash = 'a1aaa48d79f60721c5ba54a6ee8b5f1036415fea'"
+```
+$ sqlite3 rainbow.db "SELECT number FROM rainbow WHERE hash = '200a4b388339588ff82ae821500f6347375e93ed'"
+4000000000999997
+```
+
 
 On my laptop, it takes 1m04s to generate 1M valid credit card numbers.
 
