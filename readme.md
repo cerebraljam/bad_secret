@@ -21,6 +21,7 @@ On my laptop, it takes 1m04s to generate 1M valid credit card numbers.
 Generating all valid card numbers will take some time and the database will take few GB, but it is in the reach of anyone with some means and patience.
 
 How to accelerate the creation of the rainbow table:
+* Use GPUs
 * Use threads to exploit all cores/cpus
 * Spread the load on multiple computers by computing different ranges
 * Reduce the number of card generated to targeted issuers by refining the first 4-6 digits.
